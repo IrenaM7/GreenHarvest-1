@@ -129,9 +129,20 @@ header {
 }
 .menu-item {
 }
-.modal {
-  max-width: 351px;
+/*modal windous*/
+.backdrop {
+  position: absolute;
+  inset: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  position: relative;
+  display: flex;
+  width: 375px;
+  min-height: 812px;
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -142,11 +153,10 @@ header {
   display: block;
   box-sizing: border-box;
   width: 118px;
-  border: 1px solid rgb(251, 251, 251);
+  border: 1px solid var(--white-text);
   border-radius: 12px;
-  background: rgb(251, 251, 251);
 
-  color: rgb(122, 49, 69);
+  color: var(--white-text);
   font-family: Inter Tight;
   font-size: 14px;
   font-weight: 500;
@@ -159,4 +169,14 @@ header {
 .link-modal.vegetables {
   margin-top: 24px;
   margin-bottom: 24px;
+}
+.modal-close-icon {
+}
+.modal-close-btn {
+  position: absolute;
+  display: block;
+  top: 20px;
+  right: 20px;
+  align-items: center;
+  justify-content: center;
 }
